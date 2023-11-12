@@ -95,6 +95,7 @@ a:hover {
 .hamburger-menu {
     position: relative;
     display: inline-block;
+    z-index: 1;
 }
 .hamburger-icon{
     display: flex;
@@ -174,7 +175,7 @@ a:hover {
 }
 .welcome-text{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: rgb(241, 238, 227);
 }
 .brand-name{
@@ -190,7 +191,6 @@ a:hover {
     background-size: cover;
     padding: 10rem;
     padding-bottom:15rem;
-    z-index: -1;
 }
 .welcome-section-buttons{
     text-align: center;
@@ -282,24 +282,28 @@ a:hover {
 
 /*PRODUCT IMAGES*/
 .featured-items{
+    padding-top: 3rem;
     margin: 0 5%;
     text-align: center;
 }
 h4{
-    padding-top: 5rem;
-    font-size: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
     font-weight: 100;
 }
 h1{
+    font-family: 'Oswald', sans-serif;
     padding: 2rem;
     font-size: 4rem;
     font-weight: 500;
+    margin: 1rem;
+    margin-top: -2rem;
 }
 .product-images{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(6,1fr);
     grid-auto-rows: 400px 300px;
-    grid-gap: 10px;
+    grid-gap: 12px;
     grid-auto-flow: dense;
 }
 .product-image{
@@ -334,14 +338,18 @@ h1{
     pointer-events: none;
     z-index: 4;
     transition: 0.3s ease-in-out;
-    -webkit-backdrop-filter: blur(5px) saturate(1.8);
-    backdrop-filter: blur(5px) saturate(1.8);
+    -webkit-backdrop-filter: blur(1px) saturate(1.8);
+    backdrop-filter: blur(1px) saturate(1.8);
 }
 .product-image:hover .img-text{
     opacity: 1;
     animation: move-down 0.3s linear;
     padding: 1rem;
     width: 100%;
+}
+.img-text{
+    font-family: 'Agbalumo', sans-serif;
+    background-color: #1f1f1f;
 }
 .w-1{
     grid-row: span 2;
@@ -350,9 +358,163 @@ h1{
 .w-6{
     grid-column: span 2;
 }
-.w-3{
-    grid-row: 4;
+
+.featured-items-button{
+    margin: 3rem;
 }
+
+/* FOOTER */
+footer{
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+h6{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    padding: 2rem;
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 1rem;
+    margin-top: -3rem;
+
+}
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .twitter {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #03A9F4;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .facebook {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: white;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .email {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: #8c9eff;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #03A9F4;
+  }
+  
+  .card2:hover .twitter {
+    fill: white;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: black;
+  }
+  
+  .card3:hover .facebook {
+    fill: white;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #8c9eff;
+  }
+  
+  .card4:hover .email {
+    fill: white;
+  }
+
+
+
+
+
 
 
 
