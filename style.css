@@ -368,6 +368,8 @@ footer{
     align-items: center;
     text-align: center;
     margin-top: 5rem;
+    background-color: black;
+    padding: 4rem;
 }
 h6{
     font-family: 'Oswald', sans-serif;
@@ -380,8 +382,7 @@ h2{
     font-size: 4rem;
     font-weight: 500;
     margin: 1rem;
-    margin-top: -3rem;
-
+    margin-top: -2rem;
 }
 
 
@@ -390,21 +391,20 @@ h2{
     flex-direction: column;
     gap: 0.5em;
     align-items: center;
-  }
-  
-  .up {
+}
+.up {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
-  }
-  
-  .down {
+}
+.down {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
-  }
-  
-  .card1 {
+}
+
+/* INSTAGRAM */
+.card1 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -413,48 +413,111 @@ h2{
     border-radius: 90px 5px 5px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
-  }
+}
+.instagram {
+    margin-top: 1em;
+    margin-left: 2.3em;
+    width: 44px;
+    height: 30px;
+}
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+.insta-gradient{
+    display: block;
+    width: 42px;
+    height: 31px;
+}
+.insta-white{
+    display: none;
+}
+.card1:hover .insta-gradient{
+    display: none;
+}  
+.card1:hover .insta-white{
+    display: block;
+}  
+
+
+/* TWITTER(X) */
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
   
-  .instagram {
-    margin-top: 1.5em;
-    margin-left: 1.2em;
-    fill: #cc39a4;
+.twitter {
+    margin-top: 1em;
+    margin-left: 1.5em;
+    width: 33px;
+    height: 28px;
   }
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #1f1f1f;
+}
+.x-black {
+    display: block;
+}
+.x-white{
+    display: none;
+}
+.card2:hover .x-black{
+    display: none;
+}
+.card2:hover .x-white{
+    display: block;
+}
+
+
   
-  .card2 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 90px 5px 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .twitter {
-    margin-top: 1.5em;
-    margin-left: -.9em;
-    fill: #03A9F4;
-  }
-  
-  .card3 {
-    width: 90px;
-    height: 90px;
-    outline: none;
-    border: none;
-    background: white;
-    border-radius: 5px 5px 5px 90px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: .2s ease-in-out;
-  }
-  
-  .facebook {
-    margin-top: -.6em;
-    margin-left: 1.2em;
-  }
-  
-  .card4 {
+/* FACEBOOK */
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: .2s ease-in-out;
+}
+.facebook {
+  margin-top: -1em;
+  margin-left: 2.3em;
+  width: 48px;
+  height: 28px;
+}
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #1877f2;
+  transition: .2s ease-in-out;
+}
+
+.fb-white{
+    display: block;
+}
+.fb-blue{
+    display: none;
+}
+.card3:hover .fb-blue {
+    display: block;
+}
+.card3:hover .fb-white{
+    display: none;
+}
+
+/* EMAIL */
+.card4 {
     width: 90px;
     height: 90px;
     outline: none;
@@ -463,55 +526,38 @@ h2{
     border-radius: 5px 5px 90px 5px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .2s ease-in-out;
-  }
+}
   
-  .email {
-    margin-top: -.9em;
-    margin-left: -1.2em;
-    fill: #8c9eff;
+.email {
+    margin-top: -1em;
+    margin-left: 1.4em;
+    width: 44px;
+    height: 46px;
   }
-  
-  .card1:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #cc39a4;
-  }
-  
-  .card1:hover .instagram {
-    fill: white;
-  }
-  
-  .card2:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #03A9F4;
-  }
-  
-  .card2:hover .twitter {
-    fill: white;
-  }
-  
-  .card3:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: black;
-  }
-  
-  .card3:hover .facebook {
-    fill: white;
-  }
-  
-  .card4:hover {
-    cursor: pointer;
-    scale: 1.1;
-    background-color: #8c9eff;
-  }
-  
-  .card4:hover .email {
-    fill: white;
-  }
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #f84437;
+}
+.email-white {
+    display: block;
+}
+.email-black {
+    display: none;
+    margin-left: 1.1em;
+    margin-top: -0.9em;
+}
+.card4:hover .email-white {
+    display: none;
+}
+.card4:hover .email-black {
+    display: block;
+}
 
-
+footer p{
+    margin-top: 5rem;
+    text-align: center;
+}
 
 
 
