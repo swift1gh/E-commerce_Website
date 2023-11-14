@@ -1,3 +1,5 @@
+/* HOME PAGE */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,11 +44,11 @@ nav {
     justify-content: space-around;
     display: flex;
 }
-a{
+.nav-btn{
     color: rgb(229 218 182);
     text-decoration: none;
 }
-a:hover {
+.nav-btn:hover {
     color: white;
 }
 .cart {
@@ -54,10 +56,12 @@ a:hover {
     cursor: pointer;
 }
 .nav-rightside {
+    color: #1f1f1f;
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-left: 20rem;
+    text-decoration: none;
 }
 .contact-us {
     width: 10rem;
@@ -74,14 +78,14 @@ a:hover {
     cursor: pointer;
     outline: none;
 }
-.btn-text{
+.contact-btn-text{
     color: #1f1f1f;
 }
 .contact-us:hover {
     background-color: #f7e8cf;
+    color: #1f1f1f;
     animation: button-particles 1s ease-in-out infinite;
     transform: translateY(-2px);
-    text-decoration: none;
 }
 .contact-us:active {
     transform: translateY(-1px);
@@ -159,17 +163,6 @@ a:hover {
 }
 
 
-.background-image{
-    position: absolute;
-    background-image: url(Images/background-image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    width: 100%;
-    padding: 2rem;
-    z-index: -1;
-    filter: blur(3px);
-}
 .welcome-page {
     align-items: center;
 }
@@ -286,12 +279,12 @@ a:hover {
     margin: 0 5%;
     text-align: center;
 }
-h4{
+.featured-items h4{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
     font-weight: 100;
 }
-h1{
+.featured-items h1{
     font-family: 'Oswald', sans-serif;
     padding: 2rem;
     font-size: 4rem;
@@ -371,12 +364,12 @@ footer{
     background-color: black;
     padding: 4rem;
 }
-h6{
+.contact h6{
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
     font-weight: 100;
 }
-h2{
+.contact h2{
     font-family: 'Oswald', sans-serif;
     padding: 2rem;
     font-size: 4rem;
@@ -492,9 +485,9 @@ h2{
 }
 .facebook {
   margin-top: -1em;
-  margin-left: 2.3em;
-  width: 48px;
-  height: 28px;
+  margin-left: 2em;
+  width: 51px;
+  height: 30px;
 }
 .card3:hover {
   cursor: pointer;
@@ -557,7 +550,59 @@ h2{
 footer p{
     margin-top: 5rem;
     text-align: center;
+    cursor: default;
 }
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+.about-us-p1{
+    background-color: black;
+    display: flex;
+}
+.about-img {
+    height: 70vh;
+}
+.about-text-1{
+    padding: 2rem;
+}
+.about-text-1 h4{
+    font-size: 15px;
+    font-family: Oswald, serif;
+}
+.about-text-1 h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.6rem;
+}
+.about-text{
+    margin-top: 2rem;
+    font-family: rokkitt, serif;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

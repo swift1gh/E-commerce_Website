@@ -40,9 +40,18 @@
     } 
 
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .w-1, .w-2, .w-3, .w-4, .w-5, .w-6{
         grid-column: span 1;
+    }
+    .welcome-text{
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .brand-name{
+        font-size: 4rem;
+        margin-left: -2rem;
     }
 }
 @keyframes move-down {

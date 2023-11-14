@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title class="hand-written-font">SwiftLet</title>
+        <meta name="title" content="SwiftLet - Clothing and Accessories">
+        <meta name="description" content="This is a where products such as joggers, t-shirts, sweatpants, mugs, caps etc are sold">
+      
+        <link rel="shortcut icon" href="Images/SwiftLet_Favicon.png" type="image/png">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oswald:wght@300&family=Rokkitt:wght@200&family=Fraunces:opsz@9..144&family=Agbalumo&display=swap" rel="stylesheet">
+        
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">  
+        <script src="script.js"></script>  
+    </head>
+
+    <body>
+        <header id="navigations">
+            <section class="navigations">
+                <nav id="nav-bar" class="nav-bar">
+                    <div class="logo">
+                        <img src="Images/SwiftLet_Logo.png" alt="SwiftLet Logo">
+                    </div>
+                    <div>
+                        <ul class="nav-buttons">
+                            <li><a href="home.html" class="nav-btn">Home</a></li>
+                            <li><a href="#" class="nav-btn">About</a></li>
+                            <li><a href="store.html" class="nav-btn">Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-rightside">
+                        <img src="Images/shopping-cart.png" alt="shopping cart" class="cart">
+                        <a href="#contact">
+                            <button class="contact-us">
+                                <span class="contact-btn-text" style="text-decoration: none;">Contact Us</span>
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+                    
+                <nav id="hamburger-nav">
+                    <div class="logo">
+                        <img src="Images/SwiftLet_Logo.png" alt="SwiftLet Logo">
+                    </div>
+                    <div class="hamburger-menu">
+                        <div class="hamburger-icon" onclick="toggleMenu()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="menu-links">
+                            <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+                            <li><a href="#" onclick="toggleMenu()">About</a></li>
+                            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                            <li><a href="store.html" onclick="toggleMenu()">Store</a></li>
+                        </div>
+                    </div>
+                </nav>    
+            </section>
+        </header>
+
+        <main>
+            <section class="about-us-p1">
+                <div><img src="Images/img6.jpg" alt="Image" class="about-img"></div>
+
+                <div class="about-text-1">
+                    <h4>About Us...</h4>
+                    <h1>You Are Warmly Welcome...</h1>
+
+                    <p class="about-text">
+                        SwiftLet is a fully online business, founded in 2023 by Prince Yekunya, which provides its customers with clothes, camera lenses and so on. <br><br>
+                        Shop the best selection of products and accessories at our store! Our team is passionate about curating a diverse, stylish collection of high-quality items that will meet your needs. Whether you're searching for a special gift or looking to expand your wardrobe, you can find it here. With unbeatable prices and customer service, we make sure to provide an exceptional shopping experience every time. Come explore all the possibilities at our store - you won't be disappointed!
+                    </p>
+                </div>
+
+            </section>
+        </main>
+
+    </body>
+</html>
