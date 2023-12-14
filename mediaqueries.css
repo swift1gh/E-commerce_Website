@@ -7,18 +7,66 @@
     .product-images{
         grid-template-columns: repeat(4, 1fr);
     } 
+    .about-text-1 {
+        padding: 5rem;
+    }
 }
 @media screen and (max-width: 1200px) {
+    .product-images{
+        grid-template-columns: repeat(3, 1fr);
+    } 
+    .about-text-1 {
+        padding: 4rem;
+    }
+    .about-text-1 h1{
+        font-size: 2.5rem;
+    }
+    .about-text{
+        font-size: 1.45rem;
+        padding-right: 2rem;
+    }
+    .about-img{
+        height: 36rem;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
     #nav-bar{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }  
-    .product-images{
-        grid-template-columns: repeat(3, 1fr);
-    } 
+    .about-img{
+        height: 65vh;
+    }
+    .about-text-1{
+        padding: 2.8rem;
+    }    
+    .about-text-1 h1{
+        font-size: 2rem;
+    }
+    .about-text{
+        font-size: 1.3rem;
+        padding-right: 2rem;
+    }
 }
+@media screen and (max-width: 850px) {
+    .about-img{
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 750px){
+    .about-img{
+        float: left;
+        height: 45vh;
+    }
+    .about-text{
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 700px) {
     footer {
         height: 40vh;
@@ -54,6 +102,10 @@
         margin-left: -2rem;
     }
 }
+
+
+
+
 @keyframes move-down {
     0%{
         top: 10%;

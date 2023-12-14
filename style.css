@@ -14,6 +14,7 @@ body{
     width: 100px;
     display: flex;
     padding: 0.5rem;
+    margin-right: 4rem;
 }
 .nav-bar{
     justify-content: center;
@@ -137,6 +138,9 @@ nav {
     text-decoration: none;
     transition: all 0.3 ease-in-out;
 }
+.menu-links a:hover {
+    color: #a18350;
+}
 .menu-links li{
     list-style: none;
 }
@@ -163,6 +167,8 @@ nav {
 }
 
 
+
+/* MAIN */
 .welcome-page {
     align-items: center;
 }
@@ -171,11 +177,15 @@ nav {
     font-size: 1.5rem;
     color: rgb(241, 238, 227);
 }
+.hand-written-font{
+    font-family: 'Great Vibes', cursive;
+}
 .brand-name{
     font-size: 5rem;
     text-align: center;
     margin: 0;
     color: #f7e8cf;
+    font-family: 'Great Vibes', cursive;
 }
 .welcome-section{
     background-image: url(Images/background-image.png);
@@ -565,12 +575,13 @@ footer p{
 .about-us-p1{
     background-color: black;
     display: flex;
+    max-height: 45rem;
 }
 .about-img {
     height: 70vh;
 }
 .about-text-1{
-    padding: 2rem;
+    padding: 8rem;
 }
 .about-text-1 h4{
     font-size: 15px;
@@ -584,8 +595,8 @@ footer p{
     margin-top: 2rem;
     font-family: rokkitt, serif;
     font-size: 1.5rem;
+    padding-right: 5rem;
 }
-
 
 
 
