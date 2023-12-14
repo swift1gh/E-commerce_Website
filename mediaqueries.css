@@ -121,6 +121,12 @@
     .w-1 {
         grid-row: span 1;
     }
+    .contact h6{
+        font-size: 1rem;
+    }
+    .contact h2{
+        font-size: 2.5rem;
+    }
 }
 
 
