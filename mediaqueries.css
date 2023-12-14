@@ -103,6 +103,32 @@
     }
 }
 
+@media screen and ( max-width: 430px ) {
+    .welcome-section{
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+    .featured-items h4{
+        font-size: 1rem;
+    }
+    .featured-items h1{
+        font-size: 2rem;
+    }
+    footer {
+        height: 47vh;
+        padding-bottom: 5rem;
+    }
+    .w-1 {
+        grid-row: span 1;
+    }
+}
+
+
+
+
+
+
+
 
 
 
