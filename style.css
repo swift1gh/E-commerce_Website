@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    font-family: monospace;
+    box-sizing: border-box;
 }
 body{
     background-color: #1f1f1f;
@@ -106,7 +108,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 24px;
+    height: 33px;
     width: 30px;
     cursor: pointer;
     padding: 5px;
@@ -305,7 +307,7 @@ nav {
 .product-images{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: 400px 300px;
+    grid-auto-rows: 333px 300px;
     grid-gap: 12px;
     grid-auto-flow: dense;
 }
@@ -325,10 +327,10 @@ nav {
     object-fit: cover;
     object-position: 50% 50%;
     cursor: pointer;
-    transition: 0.5s ease-in-out;
+    transition: 1s ease-in-out;
 }
 .product-image:hover .image img{
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 .product-image .img-text{
     opacity: 0;
@@ -354,11 +356,11 @@ nav {
     font-family: 'Agbalumo', sans-serif;
     background-color: #1f1f1f;
 }
-.w-1{
+.p-1{
     grid-row: span 2;
-    grid-column: span 2;
+    grid-column: span 1;
 }
-.w-6{
+.p-6{
     grid-column: span 2;
 }
 
@@ -373,6 +375,7 @@ footer{
     margin-top: 5rem;
     background-color: black;
     padding: 4rem;
+    padding-bottom: 1px;
 }
 .contact h6{
     font-family: 'Oswald', sans-serif;
@@ -575,39 +578,293 @@ footer p{
 .about-us-p1{
     background-color: black;
     display: flex;
-    max-height: 45rem;
+    gap: 2rem;
 }
 .about-img {
-    height: 70vh;
+    width: 100%;
+    object-fit: cover;
 }
+
+.about-img-container{
+    width: 65%;
+}
+
 .about-text-1{
-    padding: 8rem;
+    padding: 5% 0;
+    width: 35%;
 }
 .about-text-1 h4{
-    font-size: 15px;
+    font-size: 14px;
     font-family: Oswald, serif;
+    object-fit: cover;
 }
 .about-text-1 h1 {
     font-family: 'Fraunces', serif;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
 }
 .about-text{
     margin-top: 2rem;
     font-family: rokkitt, serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-right: 5rem;
+    color: white;
+    object-fit: cover;
+}
+
+
+.text-block-2{
+    font-family: Oswald, serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 5rem;
+}
+
+.block-3{
+    padding: 2rem;
+    background-color: black;
+}
+
+.subscribe-form{
+    display: flex;
+    gap: 2rem;
+}
+
+.subscribe-left{
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.subscribe-left img{
+    width: 100%;
+}
+
+.subscribe-right{
+    width: 50%;
+    padding: 12% 0;
+    padding-right: 1rem;
+}
+
+.subscribe-right p{
+    color: white;
+}
+
+.subscription-title{
+    font-family: Oswald, serif;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.subscription-text-box{
+    display: flex;
+    padding: 1rem 0;
+    width: 90%;
+}
+
+.subscription-text-box input{
+    width: 70%;
+    border-style: hidden;
+    padding: 1rem;
+}
+
+.subscribe-button{
+    width: 30%;
+    background-color: rgb(229 218 182);
+    border-style: hidden;
+}
+
+.subscribe-button:hover {
+    cursor: pointer;
+}
+
+.about-footer{
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.footer-logo{
+    height: 50%;
+}
+
+.footer-logo img{
+    height: 10rem;
+}
+
+.copyright{
+    height: 50%;
+    padding: 1rem;
+    margin-top: -4rem;
 }
 
 
 
 
 
+/* STORE */
+.products {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.products-menu {
+    background-color: white;
+    color: black;
+    font-family: monospace;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.products-menu ul {
+    position: sticky;
+    top: 11rem;
+}
+
+.products-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.products-menu li{
+    list-style: none;
+    margin: 8px 0px;
+}
+
+.products-menu li:hover {
+    color: rgb(186, 172, 126);
+    cursor: pointer;
+}
+
+.changeColor{
+    color: rgb(186, 172, 126); 
+}
+
+.store-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 320px 300px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    margin: 1rem;
+    padding-right: 0;
+}
+
+.prod{
+    width: 100%;
+    height: 90%;
+    position: relative;
+}
+.prod img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+}
+
+.product-title {
+    background-color: white;
+    color: darkkhaki;
+    text-align: center;
+    padding: 1rem;
+    margin-left: -1rem;
+}
+
+.purchase-tag {
+    display: flex;
+    gap: 3rem;
+    height: 10%;
+    padding: 0.5rem;
+}
+
+.price {
+    text-align: center;
+    color: rgb(186, 172, 126);
+    width: 60%;
+    cursor: default;
+}
+
+.buy-btn {
+    background-color: antiquewhite;
+    width: 6rem;
+    height: 2rem;
+}
+
+.buy-btn:hover {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.r1{
+    grid-row: span 1;
+}
+.r2{
+    grid-row: span 2;
+}
+.r3{
+    grid-row: span 3;
+}
+.r4{
+    grid-row: span 4;
+}
+
+.c1{
+    grid-column: span 1;
+}
+.c2{
+    grid-column: span 2;
+}
+.c3{
+    grid-column: span 3;
+}
+.c4{
+    grid-column: span 4;
+}
 
 
 
 
+.product1{
+    display: flex;
+}
+.product2{
+    display: none;
+}
+.product3{
+    display: none;
+}
+.product4{
+    display: none;
+}
+.product5{
+    display: none;
+}
+.product6{
+    display: none;
+}
+.product7{
+    display: none;
+}
+.product8{
+    display: none;
+}
 
 
+
+
+.store-main{
+    display: flex;
+}
+
+#cameraLenses {
+    color: #a18350;
+}
+
+
+.copyright-text{
+    padding-top: 1.6rem;
+}
 
 
 

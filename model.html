@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tab Switcher</title>
+</head>
+
+
+<body>
+
+    <div class="tabs">
+        <button onclick="showTab('tab1')">Tab 1</button>
+        <button onclick="showTab('tab2')">Tab 2</button>
+        <button onclick="showTab('tab3')">Tab 3</button>
+    </div>
+
+    <div id="tab1" class="tab-content">
+        <h2>Tab 1 Content Goes Here</h2>
+    </div>
+
+    <div id="tab2" class="tab-content">
+        <h2>Tab 2 Content Goes Here</h2>
+    </div>
+
+    <div id="tab3" class="tab-content">
+        <h2>Tab 3 Content Goes Here</h2>
+    </div>
+
+</body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    }
+
+    .tabs {
+        display: flex;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .tab-content {
+        display: none;
+    }
+</style>
+
+<script>
+    function showTab(tabId) {
+    // Hide all tabs
+    var tabs = document.getElementsByClassName('tab-content');
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = 'none';
+    }
+
+    // Show the selected tab
+    document.getElementById(tabId).style.display = 'block';
+}
+</script>
+</html>
