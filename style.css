@@ -671,6 +671,7 @@ footer p{
     width: 30%;
     background-color: rgb(229 218 182);
     border-style: hidden;
+    color: black;
 }
 
 .subscribe-button:hover {
