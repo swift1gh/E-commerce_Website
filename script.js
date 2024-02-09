@@ -43,24 +43,3 @@ function changeColor(listItem){
 
 
 
-window.addEventListener('scroll', function() {
-    var element = document.getElementById('products-menu-ul');
-    var scrollPosition = window.scrollY;
-
-        // Check if the user has scrolled to a particular position
-        if (scrollPosition > 12) {
-            element.style.display = 'absolute';
-        }
-    }
-);
-
-
-
-
-
-
-
-
-
-
-
