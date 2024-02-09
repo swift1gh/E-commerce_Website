@@ -787,6 +787,7 @@ footer p{
     background-color: antiquewhite;
     width: 6rem;
     height: 2rem;
+    color: black;
 }
 
 .buy-btn:hover {
